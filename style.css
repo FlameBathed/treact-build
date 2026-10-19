@@ -15,7 +15,7 @@ body {
 
 .row {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    padding: 96px 0;
+    padding: 80px 0;
 }
 
 .purple {
@@ -166,7 +166,16 @@ FEATURES ↓
     align-items: center;
 }
 
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100%/3);
+}
 
+.service__description {
+    display: flex;
+    flex-direction: column;
+}
 /* 
 
 QUALITY WORK ↓
@@ -221,6 +230,16 @@ PRICING ↓
     align-items: center;
 }
 
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan__container {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+}
 /* 
 
 TESTIMONIALS ↓
@@ -262,7 +281,23 @@ footer {
     overflow: hidden;
 }
 
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.link {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/5);
+    align-items: center;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* 
 
 MOBILE RESPONSIVENESS ↓
