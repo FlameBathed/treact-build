@@ -223,7 +223,7 @@ nav {
 
 .btn__menu {
   display: none;
-  background: transparent;
+  background-color: transparent;
   border: none;
   transition: all 300ms ease;
 }
@@ -231,6 +231,12 @@ nav {
 .btn__menu--svg:hover {
   filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg)
     brightness(94%) contrast(115%);
+}
+
+.btn__menu--close {
+  position: fixed;
+  top: 24px;
+  right: 18px;
 }
 
 .modal {
@@ -283,10 +289,9 @@ nav {
   transform: translateX(0);
 }
 
-.btn__menu--close {
-  position: fixed;
-  top: 24px;
-  right: 18px;
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 /* 
